@@ -6,7 +6,7 @@ import Slider from "react-slick";
 import Lottie from "lottie-react";
 import Footer from "../../components/Footer/Index.tsx";
 
-import style from "./Veiculo.module.css";
+// import style from "./Veiculo.module.css";
 import "photoswipe/dist/photoswipe.css";
 import "../../services/slick.css";
 import "../../services/slick-theme.css";
@@ -49,12 +49,6 @@ export default function Veiculo() {
   const { id } = useParams();
   const [veiculo, setVeiculo] = useState<Veiculo>({});
   const [loading, setLoading] = useState(true);
-
-  // Passar parâmetros via URL para Iframe do HUB, para preencher campo do carro desejado pelo Lead
-  const carroDesejado = `${veiculo.Marca ?? ""} ${veiculo.Modelo ?? ""}`.trim();
-  const urlForm = `https://api.leadconnectorhq.com/widget/form/8zVVer7mXjkTybpWLKer?carro_desejado=${encodeURIComponent(
-    carroDesejado
-  )}`;
 
   useEffect(() => {
     window.scrollTo(0, 0);
