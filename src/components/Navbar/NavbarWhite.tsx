@@ -46,8 +46,8 @@ export default function Navbar() {
               <nav className="menu-mobile flex flex-col md:hidden gap-4">
                 <a href="/">Home</a>
                 <a href="/veiculos">Nosso estoque</a>
-                <a href="/venda-seu-carro">Venda seu carro</a>
-                <a href="/agendamento">Agende uma visita</a>
+                {/* <a href="/venda-seu-carro">Venda seu carro</a>
+                <a href="/agendamento">Agende uma visita</a> */}
                 <h4 className="font-semibold mt-4">Telefones</h4>
                 <a
                   href="https://api.whatsapp.com/send?phone=%2B5521987399126"
