@@ -13,7 +13,7 @@ export default function Navbar() {
           <a href="/" className="md:col-span-2">
             <img
               src={Logo}
-              alt="Cwa Digital - Ebook A nova era das concessionárias inteligentes"
+              alt="Impact Veículos"
               className="w-96 md:w-48"
             />
           </a>
@@ -23,6 +23,7 @@ export default function Navbar() {
               <a href="/">Home</a>
               <a href="/veiculos">Nosso estoque</a>
               <a href="/venda-seu-carro">Venda seu carro</a>
+              <a href="/agendamento">Agende uma visita</a>
               <a
                 href="https://api.whatsapp.com/send?phone=%2B5521987399126"
                 target="_blank"
@@ -46,6 +47,7 @@ export default function Navbar() {
                 <a href="/">Home</a>
                 <a href="/veiculos">Nosso estoque</a>
                 <a href="/venda-seu-carro">Venda seu carro</a>
+                <a href="/agendamento">Agende uma visita</a>
                 <h4 className="font-semibold mt-4">Telefones</h4>
                 <a
                   href="https://api.whatsapp.com/send?phone=%2B5521987399126"

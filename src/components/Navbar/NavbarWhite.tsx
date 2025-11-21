@@ -1,13 +1,13 @@
 import style from "./Navbar.module.css";
-import Logo from "../../assets/images/logo.webp";
+import Logo from "../../assets/images/logo-white.webp";
 import { useState } from "react";
 import { Icon } from "@iconify/react";
 
-export default function Topbar() {
+export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className={`bg-primary ${style.navbar}`}>
+    <nav className={`${style.navbar}`}>
       <div className="container mx-auto px-4 py-6 md:py-8">
         <div className="grid grid-cols-2 md:grid-cols-5 justify-between md:items-center">
           <a href="/" className="md:col-span-2">
@@ -19,7 +19,7 @@ export default function Topbar() {
           </a>
           <div className="md:col-span-3 md:items-center grid justify-end">
             {/* Menu Desktop */}
-            <div className="hidden md:flex gap-10 justify-end text-lg font-semibold ">
+            <div className="hidden md:flex gap-10 justify-end text-lg font-semibold text-white">
               <a href="/">Home</a>
               <a href="/veiculos">Nosso estoque</a>
               <a href="/venda-seu-carro">Venda seu carro</a>

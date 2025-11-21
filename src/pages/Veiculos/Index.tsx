@@ -140,21 +140,21 @@ export default function Veiculos() {
       <Topbar />
 
       <div className="container mx-auto px-4 mt-12 mb-16 ">
-        <h3 className="rubik text-3xl md:text-4xl font-bold dark mx-auto text-center">
+        <h3 className="rubik text-4xl font-bold text-white mx-auto text-center">
           O carro perfeito para você está aqui!
         </h3>
       </div>
 
       <div className="w-full max-w-[1920px] mx-auto px-4 mt-12 mb-12 ">
-        <div className="grid md:grid-cols-5 justify-between">
-          <div className={`md:col-span-1 ${style.line}`}>
-            <div className="mb-8 md:pr-8">
-              <div className="mb-8">
-                <h3 className="rubik text-xl font-bold dark">
-                  Pesquise por aqui:
-                </h3>
-              </div>
-              <div className="mb-8">
+        <div className="grid md:grid-cols-5 justify-between px-4">
+          <div className={`md:col-span-5 mb-12`}>
+            <div className="mb-8">
+              <h3 className="rubik text-xl font-bold text-white">
+                Pesquise por aqui:
+              </h3>
+            </div>
+            <div className="flex gap-4">
+              <div className="flex-1">
                 {/* <label htmlFor="modelos-select">Informe o modelo</label> */}
                 <input
                   type="text"
@@ -164,7 +164,7 @@ export default function Veiculos() {
                   onChange={filterModelo}
                 />
               </div>
-              <div className="mb-8">
+              <div className="flex-1">
                 {/* <label htmlFor="marcas-select">Marca</label> */}
                 <select
                   id="marcas-select"
@@ -189,7 +189,7 @@ export default function Veiculos() {
                   <option value="VOLKSWAGEN">VOLKSWAGEN</option>
                 </select>
               </div>
-              <div className="mb-8">
+              <div className="flex-1">
                 {/* <label htmlFor="observacao-select">Carroceria</label> */}
                 <select
                   id="observacao-select"
@@ -207,7 +207,7 @@ export default function Veiculos() {
                   <option value="PICAPE">PICAPE</option>
                 </select>
               </div>
-              <div className="mb-8">
+              <div className="flex-1">
                 {/* <label htmlFor="ano-select">Ano</label> */}
                 <select
                   id="ano-select"
@@ -233,7 +233,7 @@ export default function Veiculos() {
             </div>
           </div>
 
-          <div className="md:col-span-4 md:pl-8">
+          <div className="md:col-span-5">
             <div className="grid md:grid-cols-3 gap-8 justify-flex-start">
               {filterRecords.map((veiculo, ind) => {
                 const fotoPrincipal = veiculo.Fotos?.find(
