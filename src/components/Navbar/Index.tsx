@@ -22,14 +22,14 @@ export default function Navbar() {
             <div className="hidden md:flex gap-10 justify-end text-lg font-semibold ">
               <a href="/">Home</a>
               <a href="/veiculos">Nosso estoque</a>
-              <a href="/venda-seu-carro">Venda seu carro</a>
+              {/* <a href="/venda-seu-carro">Venda seu carro</a>
               <a href="/agendamento">Agende uma visita</a>
               <a
                 href="https://api.whatsapp.com/send?phone=%2B5521987399126"
                 target="_blank"
               >
                 <Icon icon="ic:baseline-whatsapp" width="26" height="26" />
-              </a>
+              </a> */}
             </div>
 
             {/* Botão do menu mobile */}
