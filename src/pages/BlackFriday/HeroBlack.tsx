@@ -63,20 +63,10 @@ function Fade() {
                   }}
                 >
                   <h1 className="text-white text-3xl md:text-5xl font-bold">
-                    <span className="">Está chegando a</span>{" "}
+                    <span className="">Você está na</span>{" "}
                     <span className="primary">maior Black de todos os tempos!</span>
                   </h1>
-                  <p className="text-white text-xl font-regular md:font-regular mt-8">
-                    Venha para a maior do Rio!
-                  </p>
-                  <a href="/agendamento">
-                    <motion.button
-                      className="button-white mt-12 mx-auto"
-                      whileHover={{ scale: 1.1 }}
-                    >
-                      Quero participar
-                    </motion.button>
-                  </a>
+                  
                   {/* <a href="https://api.whatsapp.com/send?phone=%2B5521987399126" target="_blank">
                     <motion.button
                       className="button-white mt-12 mx-auto"
