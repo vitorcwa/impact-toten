@@ -140,7 +140,7 @@ export default function Veiculos() {
       <Topbar />
 
       <div className="container mx-auto px-4 mt-12 mb-16 ">
-        <h3 className="rubik text-4xl font-bold text-white mx-auto text-center">
+        <h3 className="rubik text-4xl font-bold mx-auto text-center">
           O carro perfeito para você está aqui!
         </h3>
       </div>
@@ -149,7 +149,7 @@ export default function Veiculos() {
         <div className="grid md:grid-cols-5 justify-between px-4">
           <div className={`md:col-span-5 mb-12`}>
             <div className="mb-8">
-              <h3 className="rubik text-xl font-bold text-white">
+              <h3 className="rubik text-xl font-bold">
                 Pesquise por aqui:
               </h3>
             </div>

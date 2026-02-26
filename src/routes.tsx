@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import Home from "./pages/Home/Index";
-import BlackFriday from "./pages/BlackFriday/Index";
+import Home from "./pages/Home/Index";
+// import BlackFriday from "./pages/BlackFriday/Index";
 import Veiculos from "./pages/Veiculos/Index";
 import Marcas from "./pages/Veiculos/Marcas";
 import Veiculo from './pages/Veiculo/Index';
@@ -11,8 +11,8 @@ const AppRoutes = () => {
   return (
     <BrowserRouter>
       <Routes>
-        {/* <Route path="/" element={<Home />} /> */}
-        <Route path="/" element={<BlackFriday />} />
+        <Route path="/" element={<Home />} />
+        {/* <Route path="/" element={<BlackFriday />} /> */}
         <Route path="/veiculos" element={<Veiculos />} />
         <Route path="/marcas" element={<Marcas />} />
         <Route path="/veiculos/:marca" element={<Veiculos/>} />
